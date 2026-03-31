@@ -1,4 +1,4 @@
-# Personal Academic Website Design Spec
+Ôªø# Personal Academic Website Design Spec
 
 **Date:** 2026-03-31  
 **Project:** Personal Website (Jekyll, single-page)
@@ -58,7 +58,7 @@ Primary edit targets:
 
 Guidance will be included in:
 - `README.md` (quick start + deployment)
-- `docs/editing-guide.md` (exact °∞what to edit where°±)
+- `docs/editing-guide.md` (exact ‚Äúwhat to edit where‚Äù)
 - `docs/maintenance-guide.md` (future updates)
 
 ## 6. Styling Direction

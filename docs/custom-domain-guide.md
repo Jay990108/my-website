@@ -1,4 +1,4 @@
-# Custom Domain Guide (GitHub Pages)
+﻿# Custom Domain Guide (GitHub Pages)
 
 This guide applies after your site is already working on GitHub Pages.
 

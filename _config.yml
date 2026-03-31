@@ -1,4 +1,4 @@
-title: Your Name
+﻿title: Your Name
 email: your.email@example.com
 description: Personal academic website
 baseurl: ""
@@ -8,3 +8,9 @@ permalink: pretty
 plugins: []
 exclude:
   - README-draft.md
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+

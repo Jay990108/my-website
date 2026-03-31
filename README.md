@@ -1,4 +1,4 @@
-# Personal Website (Jekyll)
+﻿# Personal Website (Jekyll)
 
 A lightweight single-page academic/professional website inspired by your reference template. It is designed to be easy to edit without deep coding knowledge.
 
