@@ -2,17 +2,19 @@
 ---
 
 :root {
-  --bg: #f3f3f3;
-  --text: #1a1a1a;
-  --muted: #6a6a6a;
-  --accent: #2ba8df;
-  --accent-hover: #1b89b8;
-  --max-width: 1080px;
-  --space-xs: 0.4rem;
-  --space-sm: 0.8rem;
-  --space-md: 1.2rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
+  --bg: #f2f3f2;
+  --text: #15181b;
+  --muted: #66707a;
+  --accent: #2397cc;
+  --accent-hover: #18749d;
+  --max-width: 1120px;
+  --space-xs: 0.5rem;
+  --space-sm: 0.9rem;
+  --space-md: 1.35rem;
+  --space-lg: 2.2rem;
+  --space-xl: 3.4rem;
+  --heading-font: "Manrope", "Segoe UI", sans-serif;
+  --body-font: "Fraunces", "Georgia", serif;
 }
 
 * {
@@ -23,8 +25,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
-  line-height: 1.55;
+  font-family: var(--body-font);
+  line-height: 1.62;
+  text-rendering: optimizeLegibility;
 }
 
 .page {
@@ -35,16 +38,18 @@ body {
 
 .site-header h1 {
   margin: 0 0 var(--space-xl);
-  font-size: clamp(2rem, 3.3vw, 2.9rem);
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 2.6vw, 2.55rem);
   font-weight: 500;
-  color: #5a5f65;
+  color: #4c535a;
   letter-spacing: 0.01em;
+  text-transform: lowercase;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(170px, 240px) 1fr;
-  gap: var(--space-xl);
+  grid-template-columns: minmax(170px, 230px) 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
 }
 
@@ -59,9 +64,11 @@ body {
 
 .hero-content h2 {
   margin: 0 0 var(--space-lg);
-  font-size: clamp(1.85rem, 3vw, 3rem);
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 3.5vw, 4rem);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
 }
 
 .hero-content .accent {
@@ -69,9 +76,10 @@ body {
 }
 
 .hero-content p {
-  margin: 0 0 var(--space-lg);
-  font-size: clamp(1.2rem, 1.55vw, 2rem);
-  color: #252525;
+  margin: 0 0 var(--space-md);
+  max-width: 40ch;
+  font-size: clamp(1.2rem, 1.2vw, 1.7rem);
+  color: #21262b;
 }
 
 .hero-content strong {
@@ -79,14 +87,18 @@ body {
 }
 
 .links-line {
-  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  margin-top: var(--space-lg);
+  font-family: var(--heading-font);
+  font-size: clamp(1.02rem, 1.05vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
   color: var(--muted);
 }
 
 a {
   color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 0.12em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
 }
 
 a:hover {
@@ -113,7 +125,7 @@ a:hover {
   }
 
   .hero-photo img {
-    max-width: 170px;
+    max-width: 180px;
   }
 
   .hero-content h2 {
