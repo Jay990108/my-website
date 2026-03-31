@@ -1,0 +1,126 @@
+---
+---
+
+:root {
+  --bg: #f3f3f3;
+  --text: #1a1a1a;
+  --muted: #6a6a6a;
+  --accent: #2ba8df;
+  --accent-hover: #1b89b8;
+  --max-width: 1080px;
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.2rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg) calc(var(--space-xl) + 1rem);
+}
+
+.site-header h1 {
+  margin: 0 0 var(--space-xl);
+  font-size: clamp(2rem, 3.3vw, 2.9rem);
+  font-weight: 500;
+  color: #5a5f65;
+  letter-spacing: 0.01em;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(170px, 240px) 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.hero-content h2 {
+  margin: 0 0 var(--space-lg);
+  font-size: clamp(1.85rem, 3vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero-content .accent {
+  color: var(--accent);
+}
+
+.hero-content p {
+  margin: 0 0 var(--space-lg);
+  font-size: clamp(1.2rem, 1.55vw, 2rem);
+  color: #252525;
+}
+
+.hero-content strong {
+  font-weight: 700;
+}
+
+.links-line {
+  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.sep {
+  margin: 0 var(--space-xs);
+  color: #8e8e8e;
+}
+
+@media (max-width: 860px) {
+  .page {
+    padding: var(--space-lg) var(--space-md) calc(var(--space-lg) + 1rem);
+  }
+
+  .site-header h1 {
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .hero-photo img {
+    max-width: 170px;
+  }
+
+  .hero-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-content p {
+    margin-bottom: var(--space-md);
+  }
+}

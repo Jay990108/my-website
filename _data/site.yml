@@ -1,0 +1,21 @@
+name: Your Name
+photo: /assets/images/profile-placeholder.svg
+intro_title_highlight: your research focus
+intro_title_rest: into practical impact
+
+intro_paragraphs:
+  - "<strong>Your Name</strong> is a PhD candidate in Computer Science at <strong>Your University</strong>. This is a short professional introduction."
+  - "Your research explores human-computer interaction, intelligent systems, and tools that support real-world decision-making."
+  - "You can find more details through the links below."
+
+links:
+  scholar:
+    label: Google Scholar
+    url: "https://scholar.google.com/"
+  cv:
+    label: CV
+    url: "/assets/files/cv.pdf"
+  email:
+    label: Email
+    url: "mailto:your.email@example.com"
+    text: "your.email@example.com"

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.data.site.name }} | {{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header">
+        <h1>{{ site.data.site.name }}</h1>
+      </header>
+
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-photo">
+          <img src="{{ site.data.site.photo | relative_url }}" alt="Profile photo of {{ site.data.site.name }}">
+        </div>
+
+        <div class="hero-content">
+          <h2>
+            <span class="accent">{{ site.data.site.intro_title_highlight }}</span>
+            {{ site.data.site.intro_title_rest }}
+          </h2>
+
+          {% for paragraph in site.data.site.intro_paragraphs %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+
+          <p class="links-line" aria-label="Contact and profile links">
+            <a href="{{ site.data.site.links.scholar.url }}" target="_blank" rel="noopener noreferrer">{{ site.data.site.links.scholar.label }}</a>
+            <span class="sep">|</span>
+            <a href="{{ site.data.site.links.cv.url | relative_url }}">{{ site.data.site.links.cv.label }}</a>
+            <span class="sep">|</span>
+            <a href="{{ site.data.site.links.email.url }}">{{ site.data.site.links.email.label }}</a>:
+            {{ site.data.site.links.email.text }}
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
