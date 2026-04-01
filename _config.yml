@@ -2,7 +2,7 @@ title: Huajie (Jay) Cao
 email: caohuaji@msu.edu
 description: Personal academic website
 baseurl: ""
-url: ""
+url: "https://www.huajiecao.com"
 markdown: kramdown
 permalink: pretty
 plugins: []
