@@ -11,7 +11,7 @@ intro_paragraphs:
 links:
   cv:
     label: CV
-    url: "/assets/files/cv.pdf"
+    url: "/assets/files/main.pdf"
   scholar:
     label: Google Scholar
     url: "https://scholar.google.com/citations?hl=zh-CN&user=4mBlvCcAAAAJ"

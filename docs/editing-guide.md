@@ -13,7 +13,7 @@ Important: text in `intro_paragraphs` and `news.items[].text` supports inline HT
 - `intro_title_rest`: rest of title phrase
 - `intro_paragraphs`: the introduction paragraph list
 - `links.scholar.url`: your Google Scholar URL
-- `links.cv.url`: CV URL (default is `/assets/files/cv.pdf`)
+- `links.cv.url`: CV URL (default is `/assets/files/main.pdf`)
 - `links.email.url`: email link (`mailto:you@example.com`)
 - `links.email.text`: plain email text shown on page
 - `news.items`: list of news rows shown under the intro block
@@ -31,7 +31,7 @@ photo: /assets/images/your-photo.jpg
 
 ## CV
 
-Replace `assets/files/cv.pdf` with your real CV PDF.
+Replace `assets/files/main.pdf` with your real CV PDF.
 
 If your CV is hosted elsewhere, put the full URL in `_data/site.yml` under `links.cv.url`.
 

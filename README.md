@@ -8,7 +8,7 @@ A lightweight single-page academic/professional website inspired by your referen
 - `_layouts/default.html`: Page layout
 - `assets/css/style.scss`: Styling (colors, spacing, typography)
 - `assets/images/profile-placeholder.svg`: Replace with your profile photo
-- `assets/files/cv.pdf`: Replace with your CV PDF
+- `assets/files/main.pdf`: Replace with your CV PDF
 - `index.md`: Homepage entry point
 - `_config.yml`: Jekyll/GitHub Pages config
 

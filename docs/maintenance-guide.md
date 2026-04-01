@@ -3,7 +3,7 @@
 ## Regular content updates
 
 1. Edit `_data/site.yml` for text/links.
-2. Replace `assets/files/cv.pdf` when CV changes.
+2. Replace `assets/files/main.pdf` when CV changes.
 3. Replace profile image under `assets/images/` and update `photo` field.
 4. Run local preview:
 
