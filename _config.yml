@@ -1,5 +1,5 @@
-﻿title: Your Name
-email: your.email@example.com
+title: Huajie (Jay) Cao
+email: caohuaji@msu.edu
 description: Personal academic website
 baseurl: ""
 url: ""
@@ -8,9 +8,3 @@ permalink: pretty
 plugins: []
 exclude:
   - README-draft.md
-  - docs/
-  - Gemfile
-  - Gemfile.lock
-  - vendor/
-  - .bundle/
-

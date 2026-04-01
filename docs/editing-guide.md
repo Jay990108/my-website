@@ -14,6 +14,7 @@ Edit `_data/site.yml`.
 - `links.cv.url`: CV URL (default is `/assets/files/cv.pdf`)
 - `links.email.url`: email link (`mailto:you@example.com`)
 - `links.email.text`: plain email text shown on page
+- `news.items`: list of news rows shown under the intro block
 
 ## Profile Photo
 

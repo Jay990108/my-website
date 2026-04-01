@@ -1,20 +1,13 @@
-﻿---
+---
 ---
 
 :root {
-  --bg: #f2f3f2;
-  --text: #15181b;
-  --muted: #66707a;
-  --accent: #2397cc;
-  --accent-hover: #18749d;
-  --max-width: 1120px;
-  --space-xs: 0.5rem;
-  --space-sm: 0.9rem;
-  --space-md: 1.35rem;
-  --space-lg: 2.2rem;
-  --space-xl: 3.4rem;
-  --heading-font: "Manrope", "Segoe UI", sans-serif;
-  --body-font: "Fraunces", "Georgia", serif;
+  --bg: #efefef;
+  --text: #121212;
+  --muted: #6c737c;
+  --accent: #23a8e1;
+  --accent-hover: #1678a4;
+  --max-width: 1320px;
 }
 
 * {
@@ -25,37 +18,35 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: var(--body-font);
-  line-height: 1.62;
-  text-rendering: optimizeLegibility;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
 }
 
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg) calc(var(--space-xl) + 1rem);
+  padding: 3.2rem 4.2rem 4rem;
 }
 
 .site-header h1 {
-  margin: 0 0 var(--space-xl);
-  font-family: var(--heading-font);
-  font-size: clamp(2rem, 2.6vw, 2.55rem);
+  margin: 0 0 2.8rem;
+  font-size: clamp(2.45rem, 2.45vw, 3.1rem);
   font-weight: 500;
-  color: #4c535a;
   letter-spacing: 0.01em;
   text-transform: lowercase;
+  color: #5c6470;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(170px, 230px) 1fr;
-  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(180px, 248px) minmax(0, 1fr);
+  gap: clamp(2rem, 3.4vw, 4.2rem);
   align-items: start;
 }
 
 .hero-photo img {
   width: 100%;
-  max-width: 240px;
+  max-width: 248px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
@@ -63,12 +54,12 @@ body {
 }
 
 .hero-content h2 {
-  margin: 0 0 var(--space-lg);
-  font-family: var(--heading-font);
-  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin: 0 0 1.6rem;
+  max-width: 24ch;
+  font-size: clamp(2.3rem, 3.5vw, 4.2rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
 }
 
 .hero-content .accent {
@@ -76,10 +67,11 @@ body {
 }
 
 .hero-content p {
-  margin: 0 0 var(--space-md);
-  max-width: 40ch;
-  font-size: clamp(1.2rem, 1.2vw, 1.7rem);
-  color: #21262b;
+  margin: 0 0 1.35rem;
+  max-width: 46ch;
+  font-size: clamp(1.52rem, 1.34vw, 2rem);
+  color: #23282f;
+  line-height: 1.46;
 }
 
 .hero-content strong {
@@ -87,18 +79,16 @@ body {
 }
 
 .links-line {
-  margin-top: var(--space-lg);
-  font-family: var(--heading-font);
-  font-size: clamp(1.02rem, 1.05vw, 1.25rem);
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  margin-top: 0.9rem;
+  font-size: clamp(1.24rem, 1.08vw, 1.46rem);
   color: var(--muted);
 }
 
 a {
   color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
 }
 
 a:hover {
@@ -106,33 +96,70 @@ a:hover {
 }
 
 .sep {
-  margin: 0 var(--space-xs);
-  color: #8e8e8e;
+  margin: 0 0.42rem;
+  color: #888f97;
 }
 
-@media (max-width: 860px) {
+.news {
+  margin-top: 2.2rem;
+  max-width: 62rem;
+}
+
+.news h3 {
+  margin: 0 0 0.95rem;
+  font-size: clamp(2rem, 2.2vw, 2.7rem);
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.3rem, 1.08vw, 1.48rem);
+  line-height: 1.5;
+  color: #2d333a;
+}
+
+.news-date {
+  color: #9299a1;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 900px) {
   .page {
-    padding: var(--space-lg) var(--space-md) calc(var(--space-lg) + 1rem);
+    padding: 2rem 1.15rem 2.8rem;
   }
 
   .site-header h1 {
-    margin-bottom: var(--space-lg);
+    margin-bottom: 1.45rem;
   }
 
   .hero {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: 1.2rem;
   }
 
   .hero-photo img {
-    max-width: 180px;
+    max-width: 176px;
   }
 
   .hero-content h2 {
-    margin-bottom: var(--space-md);
+    margin-bottom: 1rem;
+    max-width: 18ch;
   }
 
   .hero-content p {
-    margin-bottom: var(--space-md);
+    max-width: none;
+    margin-bottom: 0.95rem;
+  }
+
+  .news {
+    margin-top: 1.3rem;
   }
 }

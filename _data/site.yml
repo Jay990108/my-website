@@ -1,7 +1,7 @@
-﻿name: Your Name
+name: Your Name
 photo: /assets/images/profile-placeholder.svg
-intro_title_highlight: your research focus
-intro_title_rest: into practical impact
+intro_title_highlight: installing abilities
+intro_title_rest: into practical systems
 
 intro_paragraphs:
   - "<strong>Your Name</strong> is a PhD candidate in Computer Science at <strong>Your University</strong>. This is a short professional introduction."
@@ -19,3 +19,13 @@ links:
     label: Email
     url: "mailto:your.email@example.com"
     text: "your.email@example.com"
+
+news:
+  title: news
+  items:
+    - date: "2026.03"
+      text: "Placeholder update: add your latest award, paper acceptance, or milestone here."
+    - date: "2025.12"
+      text: "Placeholder update: add another short announcement."
+    - date: "2025.09"
+      text: "Placeholder update: add one more news item."
