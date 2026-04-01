@@ -6,10 +6,23 @@
     <title>{{ site.data.site.name }} | {{ page.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
   </head>
   <body>
     <main class="page">
+      <div class="top-row">
+        <div class="top-controls">
+          <p class="section-label">about</p>
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+            <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
       <header class="site-header">
+        <div class="name-rule"></div>
         <h1>{{ site.data.site.name }}</h1>
       </header>
 
@@ -19,10 +32,12 @@
         </div>
 
         <div class="hero-content">
-          <h2>
-            <span class="accent">{{ site.data.site.intro_title_highlight }}</span>
-            {{ site.data.site.intro_title_rest }}
-          </h2>
+          {% if site.data.site.intro_title_highlight or site.data.site.intro_title_rest %}
+            <h2>
+              <span class="accent">{{ site.data.site.intro_title_highlight }}</span>
+              {{ site.data.site.intro_title_rest }}
+            </h2>
+          {% endif %}
 
           {% for paragraph in site.data.site.intro_paragraphs %}
             <p>{{ paragraph }}</p>
@@ -41,14 +56,29 @@
 
       <section class="news" aria-label="News">
         <h3>{{ site.data.site.news.title }}</h3>
+        {% assign sorted_news = site.data.site.news.items | sort: "date" | reverse %}
         <ul class="news-list">
-          {% for item in site.data.site.news.items %}
+          {% for item in sorted_news limit: 5 %}
             <li>
               <span class="news-date">{{ item.date }}</span>
               <span class="news-text">{{ item.text }}</span>
             </li>
           {% endfor %}
         </ul>
+
+        {% if sorted_news.size > 5 %}
+          <details class="news-more">
+            <summary>View all news</summary>
+            <ul class="news-list news-list-all">
+              {% for item in sorted_news offset: 5 %}
+                <li>
+                  <span class="news-date">{{ item.date }}</span>
+                  <span class="news-text">{{ item.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
       </section>
     </main>
   </body>

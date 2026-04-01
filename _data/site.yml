@@ -1,31 +1,34 @@
-name: Your Name
-photo: /assets/images/profile-placeholder.svg
-intro_title_highlight: installing abilities
-intro_title_rest: into practical systems
+name: Huajie (Jay) Cao
+photo: /assets/images/profile.jpg
+
 
 intro_paragraphs:
-  - "<strong>Your Name</strong> is a PhD candidate in Computer Science at <strong>Your University</strong>. This is a short professional introduction."
-  - "Your research explores human-computer interaction, intelligent systems, and tools that support real-world decision-making."
-  - "You can find more details through the links below."
+  - "<strong>Huajie (Jay) Cao</strong> is a PhD student in Media and Information at <strong>Michigan State University</strong> advised by <a href='https://www.heerinlee.com/' target='_blank' rel='noopener noreferrer'><span class='hl'>Hee Rin Lee</span></a>
+."
+  - "His research interests lie in how people use, perceive, and interact with AI and robots. He views AI and robots as potential collaborators in the workplace, while emphasizing the importance of carefully defining their social roles, responsibilities, and boundaries in human-centered contexts."
+  - "Jay has published his work in top-tier conferences including CHI & HRI, and has received <strong>Best Paper Honorable Mentions</strong> on CHI'26, CHI'25 & HRI'24."
 
 links:
-  scholar:
-    label: Google Scholar
-    url: "https://scholar.google.com/"
   cv:
     label: CV
     url: "/assets/files/cv.pdf"
+  scholar:
+    label: Google Scholar
+    url: "https://scholar.google.com/citations?hl=zh-CN&user=4mBlvCcAAAAJ"
+
   email:
     label: Email
-    url: "mailto:your.email@example.com"
-    text: "your.email@example.com"
+    url: "mailto:caohuaji@msu.edu"
+    text: "caohuaji@msu.edu"
 
 news:
   title: news
   items:
-    - date: "2026.03"
-      text: "Placeholder update: add your latest award, paper acceptance, or milestone here."
-    - date: "2025.12"
-      text: "Placeholder update: add another short announcement."
-    - date: "2025.09"
-      text: "Placeholder update: add one more news item."
+    - date: "2026.01"
+      text: "One paper got accepted to CHI'26, and another paper got accepted to HRI'26."
+    - date: "2025.04"
+      text: "<a href='https://dl.acm.org/doi/full/10.1145/3706598.3713254' target='_blank' rel='noopener noreferrer'>Best Paper Honorable Mention award at CHI'25</a>."
+    - date: "2025.01"
+      text: "Two papers got accepted to CHI'25"
+    - date: "2024.03"
+      text: "<a href='https://dl.acm.org/doi/abs/10.1145/3610977.3634967' target='_blank' rel='noopener noreferrer'>Best Paper Honorable Mention award at HRI'24</a>."
