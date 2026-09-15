@@ -24,6 +24,8 @@ links:
 news:
   title: news
   items:
+    - date: "2026.04"
+      text: "<a href='https://dl.acm.org/doi/full/10.1145/3772318.3791602' target='_blank' rel='noopener noreferrer'>Best Paper Honorable Mention award at CHI'26</a>."
     - date: "2026.01"
       text: "One paper got accepted to CHI'26, and another paper got accepted to HRI'26."
     - date: "2025.04"
